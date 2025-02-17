@@ -146,14 +146,16 @@ p {
 }
 
 .project-container,
-.announcement-container {
+.announcement-container,
+.trending-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
 .project-container > h1,
-.announcement-container > h1 {
+.announcement-container > h1,
+.trending-container > h1 {
   font-size: 24px;
 }
 
@@ -202,4 +204,18 @@ p {
 
 .announcements > hr {
   margin: auto 0;
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  height: 100%;
+  background-color: var(--primary-color);
+  padding: 16px 32px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
