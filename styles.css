@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --primary-color: #FBF5DD;
-  --secondary-color: #A6CDC6;
-  --sidebar: #16404D;
-  --card-highlight: #DDA853;
-  --button: #1d6980;
+  --primary-color: #f8faff;
+  --secondary-color: rgb(236, 236, 236);
+  --sidebar: #6152e7;
+  --card-highlight: #ffb703;
+  --button: #778da9;
 }
 
 * {
@@ -132,4 +132,48 @@ li {
   background-color: var(--button);
   color: white;
   font-weight: bold;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 9fr 4fr;
+  padding: 32px 24px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-container > h1 {
+  font-size: 24px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 32px 24px;
+  border-left: 8px solid var(--card-highlight);
+  border-radius: 8px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.card-buttons > img {
+  width: 24px;
 }
