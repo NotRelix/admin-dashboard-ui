@@ -1,5 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-color: #FAF6E3;
+  --secondary-color: #D8DBBD;
+  --sidebar: #2A3663;
+  --card-highlight: #B59F78;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: clamp(200px, 20%, 300px) 4fr;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px;
+  background-color: var(--sidebar);
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 12px 8px;
 }
