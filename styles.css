@@ -30,6 +30,12 @@
   color: white;
 }
 
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -41,7 +47,14 @@ ul {
 }
 
 li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
   padding: 12px 8px;
+}
+
+li > p {
+  color: white;
 }
 
 p {
