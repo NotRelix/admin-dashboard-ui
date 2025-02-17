@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --primary-color: #FAF6E3;
-  --secondary-color: #D8DBBD;
-  --sidebar: #2A3663;
-  --card-highlight: #B59F78;
+  --primary-color: #FBF5DD;
+  --secondary-color: #A6CDC6;
+  --sidebar: #16404D;
+  --card-highlight: #DDA853;
+  --button: #1d6980;
 }
 
 * {
@@ -41,4 +42,94 @@ ul {
 
 li {
   padding: 12px 8px;
+}
+
+.content {
+  display: grid;
+  background-color: var(--secondary-color);
+  grid-template-rows: 1fr 4fr;
+}
+
+.top-content {
+  display: grid;
+  background-color: var(--primary-color);
+  padding: 16px 32px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navbar Search */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.input-field {
+  padding: 8px;
+  border: none;
+  border-radius: 32px;
+  width: 36rem;
+  background-color: var(--secondary-color);
+}
+
+/* Profile Navbar */
+.profile-area {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-profile {
+  border-radius: 100%;
+}
+
+.nav-profile-name {
+  font-size: 18px;
+}
+
+/* Bottom Navbar */
+.bottom-bar {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Homepage User Greeting */
+.user-greeting {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-profile {
+  border-radius: 100%;
+}
+
+.text-greeting > p {
+  font-weight: bold;
+}
+
+.text-greeting > h1 {
+  font-size: 24px;
+}
+
+/* CRUD Buttons */
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.buttons > button {
+  width: 98px;
+  padding: 12px;
+  border-radius: 24px;
+  border: none;
+  background-color: var(--button);
+  color: white;
+  font-weight: bold;
 }
